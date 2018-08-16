@@ -1,8 +1,29 @@
 {
+  "include": [ "src/**/*.ts" ],
+  "exclude": [ "src/**/*.spec.ts" ],
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./@types",
     "target": "es5",
     "module": "commonjs",
-    "lib": ["dom", "es6"],
-    "outDir": "dist"
+    "lib": [ "dom", "es6" ],
+    "outDir": "dist",
+    "noImplicitThis": true,
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "mapRoot": "/mappings/",
+    "typeRoots": [ "node_modules/@types" ],
+    // "outFile": "dist/bundle.js",
+    // "diagnostics": true,
+    // "listFiles": true,
+    // "listEmittedFiles": true,
+    // "pretty": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noImplicitReturns": true,
+    // "noEmitHelpers": true,
+    "importHelpers": true,
   }
 }
